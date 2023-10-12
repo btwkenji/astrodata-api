@@ -56,7 +56,7 @@ status Code: 200 OK
 content-Type: application/json
 ```
 
-- #### dst data
+### dst data
 
 - description: returns dst data for n period
 
@@ -90,7 +90,7 @@ Status Code: 200 OK
 Content-Type: application/json
 ```
 
-- #### predictions (60% sure)
+### predictions (60% sure)
 
 - description: calculate and returns the predicted dst index for the next n hours (future predict (60% sure))
 
@@ -109,7 +109,7 @@ Status Code: 200 OK
 Content-Type: application/json
 ```
 
-- #### bz data
+### bz data
 
 - description: retrieve bz data for n period
 
@@ -133,7 +133,7 @@ GET /bz/7d
 GET /api/bz/7d
 ```
 
-```
+```http
 GET /bz/now
 ```
 
@@ -141,7 +141,7 @@ GET /bz/now
 GET /bz/now/strength
 ```
 
-- #### plasma temperature data
+### plasma temperature data
 
 - description: retrieve time plasma temperature data for n time period
 
@@ -210,6 +210,8 @@ Content-Type: application/json
 
 - pull requests are welcome, for major changes, please open an issue first to
   discuss what you would like to change
+
+- please make sure to update tests as appropriate
 
 ## license
 
