@@ -1,6 +1,6 @@
-module github.com/kenjitheman/magneconn_api
+module github.com/kenjitheman/astrodata-api
 
-go 1.21.1
+go 1.21.3
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.1
