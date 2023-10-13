@@ -1,6 +1,6 @@
 package core
 
-import "github.com/kenjitheman/magneconn_api/vars"
+import "github.com/kenjitheman/astrodata-api/vars"
 
 func CalculateDst(data []float64) float64 {
 	if len(data) == 0 {

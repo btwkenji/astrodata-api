@@ -3,8 +3,8 @@ package handlers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/kenjitheman/magneconn_api/core"
-	"github.com/kenjitheman/magneconn_api/vars"
+	"github.com/kenjitheman/astrodata-api/core"
+	"github.com/kenjitheman/astrodata-api/vars"
 	"net/http"
 )
 
@@ -172,64 +172,64 @@ func GetDSTAndStrengthNow(c *gin.Context) {
 }
 
 func GetDST7Days(c *gin.Context) {
-  data, err := core.ParseDst7Days(vars.Dst7DaysDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParseDst7Days(vars.Dst7DaysDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
 
 func GetPlasmaTemperature1Day(c *gin.Context) {
-  data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature1DayDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature1DayDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
 
 func GetPlasmaTemperature7Days(c *gin.Context) {
-  data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature7DaysDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature7DaysDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
 
 func GetPlasmaTemperature2Hours(c *gin.Context) {
-  data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature2hoursDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature2hoursDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
 
 func GetPlasmaTemperature3Days(c *gin.Context) {
-  data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature3daysDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature3daysDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
 
 func GetPlasmaTemperature6Hours(c *gin.Context) {
-  data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature6hoursDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperature6hoursDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
 
 func GetPlasmaTemperatureRealTime(c *gin.Context) {
-  data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperatureRealTimeDataUrl)
-  if err != nil {
-    c.AbortWithError(http.StatusBadRequest, err)
-    return
-  }
-  c.JSON(http.StatusOK, data)
+	data, err := core.ParsePlasmaTemperatureData(vars.PlasmaTemperatureRealTimeDataUrl)
+	if err != nil {
+		c.AbortWithError(http.StatusBadRequest, err)
+		return
+	}
+	c.JSON(http.StatusOK, data)
 }
