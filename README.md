@@ -14,17 +14,22 @@
 .
 ├── api
 │   ├── handlers.go
+│   ├── handlers_test.go
 │   ├── health
-│   │   └── health.go
+│   │   ├── health.go
+│   │   └── health_test.go
 │   └── models.go
 ├── core
 │   ├── core.go
+│   ├── core_test.go
 │   └── parser.go
 ├── db
 │   ├── db.go
+│   ├── db_test.go
 │   └── models.go
 ├── go.mod
 ├── go.sum
+├── LICENSE
 ├── main.go
 ├── README.md
 └── vars
