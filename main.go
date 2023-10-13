@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/kenjitheman/magneconn_api/api"
-	"github.com/kenjitheman/magneconn_api/api/health"
+	"github.com/kenjitheman/astrodata-api/api"
+	"github.com/kenjitheman/astrodata-api/api/health"
 )
 
 func main() {
