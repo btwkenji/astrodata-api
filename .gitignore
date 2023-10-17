@@ -1,0 +1,17 @@
+*.o
+*.a
+*.so
+_vendor/
+bin/
+pkg/
+*.out
+*.exe
+go.sum
+main
+*.log
+.vscode/
+.idea/
+.DS_Store
+.env
+/dist/
+/dist-*
