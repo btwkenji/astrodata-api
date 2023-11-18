@@ -1,4 +1,4 @@
-# astro data api
+# Astrodata API
 
 ###
 
@@ -8,10 +8,11 @@
 
 ###
 
-## structure:
+## Project structure:
 
 ```go
-.
+astrodata-api
+│
 ├── api
 │   ├── handlers.go
 │   ├── handlers_test.go
@@ -36,34 +37,34 @@
     └── vars.go
 ```
 
-## api docs
+## Api docs
 
-- this readme file provides an overview and documentation for the astrodata_api application's RESTful API, 
-  focusing on the package handlers
+- This readme file provides an overview and documentation for the astrodata_api application's RESTful API, 
+  focusing on the package handlers.
 
-- the API provides access to various space weather data retrieval endpoints:
+- The API provides access to various space weather data retrieval endpoints:
 
-### endpoints:
+### Endpoints:
 
-- ##### base URL: https://i_dony_have_yet/api
+- ##### Base URL: https://i_don't_have_yet/api :(
 
-- ##### health check
+- ##### Health check
 
 ```http
 GET /health
 ```
-- description: checks the health of the API
+- Description: checks the health of the API
 
-- response:
+- Response:
 
 ```http
 status Code: 200 OK
 content-Type: application/json
 ```
 
-### dst data
+### Dst data
 
-- description: returns dst data for n period
+- Description: returns dst data for n period
 
 ```http
 GET /dst/7d
@@ -82,22 +83,22 @@ GET /dst/now
 ```
 
 ```http
-GET /api/dst/by-date?date=data (YYYYMM format, example: 202306)
+GET /api/dst/by-date?date=data (YYYYMM format, Example: 202306)
 ```
 
 ```http
 GET /dst/now/strength
 ```
 
-- response:
+- Response:
 ```http
 Status Code: 200 OK
 Content-Type: application/json
 ```
 
-### predictions (60% sure)
+### Predictions (60% sure)
 
-- description: calculate and returns the predicted dst index for the next n hours (future predict (60% sure))
+- Description: calculate and returns the predicted dst index for the next n hours (future predict (60% sure))
 
 ```http
 GET /predict/6h
@@ -107,16 +108,16 @@ GET /predict/6h
 GET /predict/1d
 ```
 
-- response:
+- Response:
 
 ```http
 Status Code: 200 OK
 Content-Type: application/json
 ```
 
-### bz data
+### Bz data
 
-- description: retrieve bz data for n period
+- Description: retrieve bz data for n period
 
 ```http
 GET /bz/6h
@@ -146,9 +147,9 @@ GET /bz/now
 GET /bz/now/strength
 ```
 
-### plasma temperature data
+### Plasma temperature data
 
-- description: retrieve time plasma temperature data for n time period
+- Description: retrieve time plasma temperature data for n time period
 
 ```http
 GET /plasma/now
@@ -182,14 +183,14 @@ GET /api/plasma/3d
 GET /plasma/7d
 ```
 
-- error responses
+- Error Responses
 
 ```http
 Status Code: 400 Bad Request
 Content-Type: application/json
 ```
 
-- example error response:
+- Example error Response:
 
 ```json
 {
@@ -203,21 +204,21 @@ Content-Type: application/json
 }
 ```
 
-### CORS configs
+### CORS Configs
 
-- the API is configured to allow Cross-Origin Resource Sharing (CORS) by using the github.com/gin-contrib/cors middleware, enabling access to the API from different domains
+- The API is configured to allow Cross-Origin Resource Sharing (CORS) by using the github.com/gin-contrib/cors middleware, enabling access to the API from different domains.
 
-- the API will be available at https://somesite.xyz, make requests to the defined endpoints to access space weather data
+- The API will be available at https://somesite.xyz, make requests to the defined endpoints to access space weather data.
 
-- please ensure that the appropriate URL is used along with any required query parameters when making requests to the API endpoints
+- Please ensure that the appropriate URL is used along with any required query parameters when making requests to the API endpoints.
 
-## contributing
+## Contributing
 
-- pull requests are welcome, for major changes, please open an issue first to
-  discuss what you would like to change
+- Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-- please make sure to update tests as appropriate
+- Please make sure to update tests as appropriate.
 
-## license
+## License
 
 - [MIT](https://choosealicense.com/licenses/mit/)
