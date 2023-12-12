@@ -11,7 +11,8 @@
 ## Project structure:
 
 ```go
-.
+astrodata-api
+│
 ├── api
 │   ├── handlers.go
 │   ├── handlers_test.go
