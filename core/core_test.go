@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/kenjitheman/astrodata-api/vars"
+	"github.com/btwkenji/astrodata-api/vars"
 	"testing"
 )
 
