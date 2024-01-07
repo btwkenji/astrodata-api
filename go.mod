@@ -1,4 +1,4 @@
-module github.com/kenjitheman/astrodata-api
+module github.com/btwkenji/astrodata-api
 
 go 1.21.3
 
