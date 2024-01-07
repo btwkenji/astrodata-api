@@ -1,48 +1,6 @@
-# Astrodata API
+This readme file provides an overview and documentation for the astrodata_api application's RESTful API, focusing on the package handlers.
 
-###
-
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="200" alt="go logo"  />
-</div>
-
-###
-
-## Project structure:
-
-```go
-astrodata-api
-│
-├── api
-│   ├── handlers.go
-│   ├── handlers_test.go
-│   ├── health
-│   │   ├── health.go
-│   │   └── health_test.go
-│   └── models.go
-├── core
-│   ├── core.go
-│   ├── core_test.go
-│   └── parser.go
-├── db
-│   ├── db.go
-│   ├── db_test.go
-│   └── models.go
-├── go.mod
-├── go.sum
-├── LICENSE
-├── main.go
-├── README.md
-└── vars
-    └── vars.go
-```
-
-## Api docs
-
-- This readme file provides an overview and documentation for the astrodata_api application's RESTful API, 
-  focusing on the package handlers.
-
-- The API provides access to various space weather data retrieval endpoints:
+The API provides access to various space weather data retrieval endpoints:
 
 ### Endpoints:
 
