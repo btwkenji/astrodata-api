@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/btwkenji/astrodata-api/vars"
+	"github.com/nezutero/astrodata-api/vars"
 )
 
 func TestDstParser(t *testing.T) {

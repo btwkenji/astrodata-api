@@ -3,8 +3,8 @@ package handlers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/btwkenji/astrodata-api/core"
-	"github.com/btwkenji/astrodata-api/vars"
+	"github.com/nezutero/astrodata-api/core"
+	"github.com/nezutero/astrodata-api/vars"
 	"net/http"
 )
 
